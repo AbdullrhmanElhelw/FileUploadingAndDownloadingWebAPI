@@ -63,10 +63,15 @@ This ASP.NET Web API provides endpoints for seamless file uploading, downloading
 1. Clone the repository.
    ```bash
    git clone https://github.com/yourusername/AspNetFileManagementWebAPI.git
-```bash
-  cd AspNetFileManagementWebAPI
-  dotnet restore
-  dotnet run
+  
+## Prerequisites:
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/)
+- [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/)
+- [Microsoft.EntityFrameworkCore.Tools](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/)
+
+## Installation:
 
 ```bash
 # Install the .NET 8 SDK
@@ -79,3 +84,5 @@ dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 
+# Restore the project to apply changes
+dotnet restore
